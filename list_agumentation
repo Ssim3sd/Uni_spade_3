@@ -1,0 +1,26 @@
+# The first part of the exercise 3-4, is to make a guest list of three people.
+# than print a invitation to them.
+
+guest_list1 = ['toure', 'samantha', 'brook']
+
+invite_msg1 = f"I Sa'eed Simmons invite you {guest_list1[0].title()}, {guest_list1[1].title()} & " \
+              f"{guest_list1[2].title()}, to our dinner this evening. We would appreciate your company.\n" \
+              f"Thanx again."
+
+print(invite_msg1)
+
+# 3-5 Exercise: One of the invites can't make it, state that in a print() call,
+# 'ADD A NEW INVITE TO THE LIST' replacing the old invite. Than resend new
+# invitation with updated names.
+
+removed_guest = guest_list1.pop(2)
+disinvite = removed_guest
+guest_list1.insert(2, 'kyle')
+
+
+
+update_msg1 = f"\nUnfortunately, {disinvite.title()}, will not be able to make it, there for " \
+              f"where getting a new guest, sorry for the inconvenience.\n{guest_list1[2].title()} will come instead.\n"
+
+print(update_msg1)
+
